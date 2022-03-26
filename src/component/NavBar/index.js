@@ -11,29 +11,29 @@ const NavBar=()=>{
     return(
         <AppBar position="fixed" className={classes.appBar} color="inherit">
             <Toolbar className={classes.toolBar}>
-                <Typography variant="h6" color="primary">My Portfolio</Typography>
+                <Typography variant="h6" >My Portfolio</Typography>
                 <div className={classes.iconButton}>
-                    <IconButton component={Link} to="/" color="primary">
+                    <IconButton component={Link} to="/" className={classes.iconitem} >
                         <Badge>
                             <Home/>
                         </Badge>
                     </IconButton>
-                    <IconButton component={Link} to="/contact-page" color="primary">
+                    <IconButton component={Link} to="/contact-page" className={classes.iconitem}>
                         <Badge>
                                 <ContactPage/>
                         </Badge>
                     </IconButton >
-                    <IconButton component={Link} to="/about-me" color="primary" >
+                    <IconButton component={Link} to="/about-me" className={classes.iconitem}>
                         <Badge>
                                 <InfoIcon/>
                         </Badge>
                     </IconButton>
-                    <IconButton component={Link} to="/project-details" color="primary">
+                    <IconButton component={Link} to="/project-details" className={classes.iconitem}>
                         <Badge>
                                 <WorkIcon/>
                         </Badge>
                     </IconButton>
-                    <IconButton color="primary">
+                    <IconButton className={classes.iconitem} >
                         <Badge>
                                 <a href="https://github.com/Ammundhe"><GitHub/></a>
                         </Badge>
